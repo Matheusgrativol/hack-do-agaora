@@ -1,23 +1,10 @@
-import React, { useCallback, useContext, useState } from "react";
+import React, {useContext } from "react";
 import GlobalContext from "./GlobalContext"
 
 const GlobalState = (props) => {
-    const [] = useState([])
-    const [] = useState([])
-
-    const states = {
-
-    }
-
-    const setters = {
-
-    }
 
     return (
-        <GlobalContext.Provider value={{
-            states,
-            setters,
-            }}>
+        <GlobalContext.Provider value={{}}>
             {props.children}
         </GlobalContext.Provider>
     )

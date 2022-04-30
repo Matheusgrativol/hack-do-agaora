@@ -13,22 +13,22 @@ const Router = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
-                    <InitialPage />
+                    <InitialPage/>
                 </Route>
                 <Route exact path="/login">
-                    <LoginPage />
+                    <LoginPage/>
                 </Route>
                 <Route exact path="/cadastro">
-                    <SignUpPage />
+                    <SignUpPage/>
                 </Route>
                 <Route exact path="/home">
-                    <FeedPage />
+                    <FeedPage/>
                 </Route>
                 <Route exact path="/point">
-                    <PointPage />
+                    <PointPage/>
                 </Route>
                 <Route>
-                    <ErrorPage />
+                    <ErrorPage/>
                 </Route>
             </Switch>
         </BrowserRouter>
