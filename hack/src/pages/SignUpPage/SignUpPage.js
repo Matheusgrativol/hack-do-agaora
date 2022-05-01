@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { goBack, goToFeed } from "../../routes/coordinator";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
-import Voltar from "../../images/Vector.png"
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Grid } from '@mui/material';
 
-// import styled from "styled-components"
 
 const TextH1 = styled.h1`
     text-align:center ;
