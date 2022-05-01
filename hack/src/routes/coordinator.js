@@ -10,7 +10,7 @@ export const goToSignUp = (history) => {
 }
 
 export const goToFeed = (history) => {
-    history.push("/perfil")
+    history.push("/home")
 }
 
 export const goToPoit = (history) =>{
