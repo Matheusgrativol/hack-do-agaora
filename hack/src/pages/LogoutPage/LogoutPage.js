@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import styled from "styled-components"
+import styled from "styled-components";
 import { goToLogin, goToSignUp } from "../../routes/coordinator";
+import fundo from "../../images/fundo.png";
+import Logo from "../../images/Logo.png";
 
 const ButtonLogin = styled.button`
     background: #FFFFFF;
@@ -51,11 +53,18 @@ const ContainerButton = styled.div`
 const Container = styled.div`
     display: flex;
     flex-direction: column;
+    background-image: url(${fundo});
     /* align-items: flex-start; */
-    /* align-self: flex-start; */
 `
 const ImgLogo = styled.img`
-    padding-top: 85vh;
+    width: 286px;
+    height: 251px;
+    left: 45px;
+    top: 230px;
+    padding-top: 26vh;
+    padding-bottom: 25vh;
+    align-self: center;
+
 `
 
 
@@ -64,9 +73,13 @@ const LogoutPage = () =>{
     const history = useHistory()
 
 
+    useEffect(()=>{
+        
+    }, [history])
+
     return(
         <Container>
-            <ImgLogo src="" title="" />
+            <ImgLogo src= {Logo} title="" />
             <ContainerButton>
                 <ButtonLogin onClick={() => goToLogin(history)}>LOGIN</ButtonLogin>
                 <ButtonSignUp onClick={() => goToSignUp(history)}>CADASTRE-SE</ButtonSignUp>
