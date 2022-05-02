@@ -14,7 +14,6 @@ const ButtonLogin = styled.button`
     height: 52px;
     left: 16px;
     top: 727px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 13px;
@@ -27,7 +26,6 @@ const ButtonLogin = styled.button`
 const ButtonSignUp = styled.button`
     background: #3B7636;
     border-radius: 6px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 13px;
